@@ -1,0 +1,239 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    /* border: 2px red solid; */
+}
+
+body {
+    background: -webkit-linear-gradient(to right, #cfdef3, #e0eafc);
+    background: linear-gradient(to right, #cfdef3, #e0eafc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+img {
+    max-width: 100%;
+}
+
+.main {
+    border: solid salmon 3px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+/* ==================== SEARCH ==================== */
+.search__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 0 10px 2px #3333331a;
+    border-radius: 3px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.search__content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.search__content input {
+    background-color: rgb(228, 228, 228);
+    border: none;
+    border-radius: 3px;
+    font-family: inherit;
+    padding: 0.3rem 1rem;
+}
+.search__content button {
+    background-color: transparent;
+    border: none;
+    color: #858383;
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+
+/* ==================== FAVORITE ==================== */
+.favorite__container {
+    background-color: rgb(252, 225, 231);
+    padding: 0.2rem 1rem;
+    text-align: center;
+}
+
+.favorite__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.favorite__list li {
+    position: relative;
+    font-size: 0.9rem;
+    width: 85px;
+}
+.favorite__list li .clear {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+    font-size: 1.2rem;
+    opacity: 0.2;
+}
+
+.favorite__list li .clear:hover {
+    opacity: 1;
+}
+
+.favorite__list img {
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px #3333331a;
+    object-fit: cover;
+    cursor: pointer;
+    height: 70px;
+    width: 70px;
+}
+
+.favorite__list span {
+    display: inline-block;
+    font-size: 0.9rem;
+    white-space: nowrap;
+    overflow: hidden;
+    /* text-overflow: ellipsis; */
+    width: 75px;
+    position: absolute;
+    bottom: -1rem;
+    left: 0;
+}
+
+.favorite__list span:hover {
+    background-color: black;
+    opacity: 0.8;
+    color: aliceblue;
+    white-space: normal;
+    overflow: hidden;
+}
+
+/* ==================== MEALS ==================== */
+.meals__container {
+    background-color: white;
+    padding: 0.2rem 1rem;
+    text-align: center;
+}
+.meal {
+    background-color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 0 18px 5px rgb(228, 228, 228);
+    margin: 1.5rem;
+    overflow: hidden;
+}
+
+.meal-header {
+    position: relative;
+}
+
+.meal-header .random {
+    position: absolute;
+    top: 15px;
+    background-color: white;
+    padding: 0.25rem 0.5rem;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.meal-header img {
+    object-fit: cover;
+    height: 250px;
+    width: 100%;
+}
+
+.meal-body {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.meal-body h4 {
+    margin: 0;
+}
+
+.meal-body .fav-btn {
+    border: none;
+    background-color: transparent;
+    color: rgb(228, 228, 228);
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.meal-body .fav-btn.active {
+    color: rebeccapurple;
+}
+
+/* ==================== RECIPE ==================== */
+
+.recipe__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding: 2rem;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+.recipe__container.hidden {
+    display: none;
+}
+.recipe__container div {
+    border: solid orange 4px;
+}
+.recipe__content {
+    background-color: white;
+    border-radius: 5px;
+    padding: 0 2rem;
+    position: relative;
+    overflow: auto;
+    max-height: 100vh;
+    max-width: 800px;
+    width: 100%;
+}
+
+.recipe__content button {
+    position: absolute;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.8rem;
+    top: 0.8rem;
+    right: 0.8rem;
+    border: none;
+    opacity: 0.2;
+}
+.recipe__content button:hover {
+    opacity: 1;
+}
+.recipe__content h1 {
+    text-align: center;
+}
+
+.fa-youtube {
+    padding-left: 5rem;
+    padding-bottom: 2rem;
+}

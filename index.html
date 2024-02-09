@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            http-equiv="X-UA-Compatible"
+            content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <title>Recipes App v1</title>
+
+        <!-- =============== ICONS =============== -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+        <!--=============== CSS ===============-->
+        <link
+            rel="stylesheet"
+            href="assets/css/style.css" />
+
+        <!--=============== MAIN JS ===============-->
+        <script
+            src="assets/js/main.js"
+            defer></script>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== SEARCH ====================-->
+            <section
+                class="search section"
+                id="search">
+                <div class="search__container container grid">
+                    <div class="search__content">
+                        <input
+                            type="text"
+                            id="search-input" />
+                        <button id="search-button">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== FAVORITE ====================-->
+            <section
+                class="favorite section"
+                id="favorite">
+                <div class="favorite__container container grid">
+                    <div class="favorite__content">
+                        <h3>Favorite Meals</h3>
+                        <ul
+                            class="favorite__list"
+                            id="favorite-list"></ul>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== MEALS ====================-->
+            <section
+                class="meals section"
+                id="meals">
+                <div class="meals__container container grid">
+                    <div
+                        class="meals__content"
+                        id="meals-content"></div>
+                </div>
+            </section>
+
+            <!--==================== RECIPE ====================-->
+            <section
+                class="recipe section"
+                id="recipe">
+                <div
+                    class="recipe__container container grid hidden"
+                    id="recipe-container">
+                    <div
+                        class="recipe__content"
+                        id="recipe-content"></div>
+                </div>
+            </section>
+        </main>
+        <!--==================== FOOTER ====================-->
+    </body>
+</html>
